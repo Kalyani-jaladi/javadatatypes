@@ -30,9 +30,11 @@ public class MouseMovementHandle {
 		//driver.findElement(By.linkText("Travel Agent Login")).click();*/
 		
 		driver.get("https://www.amazon.com");
-		Actions action=new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath("")));
 		
+		Actions action=new Actions(driver);
+		action.moveToElement(driver.findElement(By.id("nav-link-accountList"))).build().perform();
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Your Account")).click();
 		
 		
 		

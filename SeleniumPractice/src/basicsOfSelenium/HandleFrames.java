@@ -8,12 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.sun.xml.internal.bind.v2.runtime.output.NamespaceContextImpl.Element;
+
 public class HandleFrames {
 
 	public static void main(String[] args) throws InterruptedException {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\\\\\\\\\\\\\\\Program Files\\\\\\\\\\\\\\\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -63,6 +65,7 @@ public class HandleFrames {
 //		
 		driver.get("http://www.amazon.com");
 		
+		
 		/*List <WebElement> elements=driver.findElements(By.tagName("iframe"));
 		 int noOfframes= elements.size();
 		 System.out.println("no of Iframes on the web page are:"+ noOfframes);
@@ -82,6 +85,7 @@ public class HandleFrames {
 				*/
 				
 			
+		
 		
 		 
 		//driver.quit();

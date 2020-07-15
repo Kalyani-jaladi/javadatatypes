@@ -16,9 +16,9 @@ public class Navigations {
 		
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
+		//both are methods in selenium.
 		//difference between get and navigation
-		//get is for lauch particular url
+		//get is for lauch particular url, WebDriver will wait until the page has fully loaded.
 		//navigate is for switch to external browser 
 		driver.get("http://www.google.com");
 		Thread.sleep(2000);
